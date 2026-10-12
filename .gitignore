@@ -1,0 +1,62 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated render outputs
+backend/render_out_*
+backend/output/
+backend/outputs/
+*.mp4
+*.mov
+*.avi
+
+# Temporary Blender files
+backend/temp_*.blend
+*.blend1
+*.blend2
+
+# Blender backup and temporary files
+*.blend@
+*.tmp
+
+# Frontend dependencies
+frontend/node_modules/
+
+# Build outputs
+frontend/dist/
+frontend/build/
+
+# Tool caches
+.vite/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
