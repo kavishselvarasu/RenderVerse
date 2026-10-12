@@ -1,8 +1,8 @@
-# Render Verse 🌌
+# Render Verse
 
 Render Verse is a decentralized GPU computing node designed to process heavy workloads. Currently functioning as a distributed 3D rendering farm for Blender (Cycles & Eevee), the platform is actively expanding to support distributed Machine Learning training (PyTorch, TensorFlow, etc.) using isolated Docker containers.
 
-## 🚀 Features
+## Features
 
 *   **Decentralized Rendering:** Upload `.blend` files or zipped project folders containing textures.
 *   **Dynamic Workload Routing:** FastAPI backend automatically handles queueing and GPU locking.
@@ -12,7 +12,7 @@ Render Verse is a decentralized GPU computing node designed to process heavy wor
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
 
@@ -24,7 +24,7 @@ Before you begin, ensure you have the following installed on your system:
 
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -93,7 +93,7 @@ cd frontend
 npm install
 ```
 
-## 💻 Running the Application
+## Running the Application
 You need to run both the backend and frontend servers simultaneously in separate terminal windows.
 
 ### Start the Backend
@@ -114,7 +114,7 @@ npm run dev
 
 Vite will provide a localhost URL (usually http://localhost:5173). Open this in your browser to access the Render Verse UI.
 
-## ⚙️ How to Use
+## How to Use
 * Open the web interface.
 
 * Drag and drop a .blend file (or a .zip folder if your project requires external textures).
@@ -127,7 +127,7 @@ Vite will provide a localhost URL (usually http://localhost:5173). Open this in 
 
 * Click Start Render. You can monitor the process in the Live Terminal on the screen. The file will automatically download upon completion.
 
-## ⚠️ Troubleshooting & Notes
+## Troubleshooting & Notes
 * Docker & Windows nvidia-smi: If you are running Docker via WSL2 on Windows, running nvidia-smi in your Windows command prompt will not show the Docker processes in the process list. This is normal. You can verify the GPU is being used by looking at the Memory-Usage spike in nvidia-smi or monitoring the Live Terminal in the Web UI for the DEVICE_LOG: Found... message.
 
 * Out of Memory (OOM) Errors: If your container instantly crashes without rendering, your scene (e.g., dense particle hair or high-res textures) may exceed your GPU's VRAM capacity. Try lowering the sample count, reducing texture sizes, or switching to Eevee.
